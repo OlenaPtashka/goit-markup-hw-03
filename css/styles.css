@@ -21,7 +21,8 @@ h3,
 h4,
 h5,
 h6,
-ul {
+ul,
+img {
   margin: 0;
   padding: 0;
 }
@@ -89,10 +90,14 @@ ul {
 /*Хедер з лого, новігацією та адресою*/
 
 .header {
-  background-color: var(--color-background-header-main);
+  background-color: var(--color-main-light);
+  border-bottom: solid var(--color-background-header-main) 1px;
 }
 
 .logo {
+  display: block;
+  padding: 24px 0;
+  padding-right: 147px;
   color: var(--color-main-dark);
   text-decoration: none;
   text-transform: uppercase;
@@ -110,6 +115,8 @@ ul {
 }
 
 .nav-link {
+  display: block;
+  padding: 24px 0;
   text-decoration: none;
   color: var(--color-main-dark);
   font-weight: 500;
@@ -125,6 +132,8 @@ ul {
 }
 
 .address-link {
+  display: block;
+  padding: 24px 0;
   text-decoration: none;
   color: var(--color-text-main);
   font-weight: 400;
@@ -137,6 +146,16 @@ ul {
 .address-link:focus,
 .address-link:hover {
   color: var(--color-pressed-button);
+}
+.flex-list-header {
+  display: flex;
+  gap: 40px;
+}
+
+.flex-list-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*!!!Головна сторінка - Studio!!!*/
@@ -241,9 +260,25 @@ ul {
 }
 
 /*колір та хар-ка проекту*/
-.position {
-  background-color: var(--color-main-light);
-  flex-wrap: wrap-reverse;
+.flex-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px;
+}
+
+.img-portfolio {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-position {
+  padding: 32px 0;
+  padding-left: 16px;
+  border-bottom: solid var(--color-background-header-main) 1px;
+  border-right: solid var(--color-background-header-main) 1px;
+  border-left: solid var(--color-background-header-main) 1px;
 }
 
 /*Футер*/
