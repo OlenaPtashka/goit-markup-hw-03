@@ -50,6 +50,7 @@ ul {
 
 /*це заголовки секцій - h2*/
 .section-title {
+  margin-bottom: 72px;
   color: var(--color-main-dark);
   font-weight: 700;
   font-size: 36px;
@@ -59,13 +60,17 @@ ul {
   text-transform: capitalize;
 }
 
-/*колір секції - позиції учасника команди/проекту*/
-.position {
+/*колір та хар-ка позиції учасника команди/проекту*/
+.team-position {
   background-color: var(--color-main-light);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /*це назви підрозділів - h3*/
 .title {
+  margin-bottom: 8px;
   color: var(--color-main-dark);
   font-weight: 500;
   font-size: 20px;
@@ -180,17 +185,35 @@ ul {
   background-color: var(--color-pressed-button);
 }
 
-/*Секція 2 без назви з описом стратегії, цілей, компетенцій, технологій - поки без додаткових*/
+.flex-list {
+  display: flex;
+  gap: 24px;
+}
 
-/*Секція 3  команда*/
+/*Оформлення секцій 2-4*/
+.activity-description {
+  width: 264px;
+  padding-top: 120px;
+}
 
 .team-section {
   background-color: var(--color-background-light);
 }
 
+.team-title {
+  padding-top: 120px;
+}
+
+.team-description {
+  width: 232px;
+  margin: 32px 16px;
+  text-align: center;
+}
+
 /*!!!Cторінка - Portfolio!!!*/
 
 .portfilio-button {
+  padding: 12px 24px;
   background-color: var(--color-background-light);
   border-radius: 4px;
   border-color: 1px solid var(--color-background-header-main);
@@ -204,10 +227,23 @@ ul {
   letter-spacing: 0.04em;
   cursor: pointer;
 }
+
 .portfilio-button:hover,
 .portfilio-button:focus {
   background-color: var(--color-pressed-button);
   color: var(--color-main-light);
+}
+
+.radio-button-list {
+  justify-content: center;
+  padding-top: 96px;
+  margin-bottom: 72px;
+}
+
+/*колір та хар-ка проекту*/
+.position {
+  background-color: var(--color-main-light);
+  flex-wrap: wrap-reverse;
 }
 
 /*Футер*/
